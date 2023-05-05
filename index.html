@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NFT Launchpad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">My Projects</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Turn your Ideas into NFTs</h1>
+    <form id="project-form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div>
+        <label for="imageUrl">Image URL</label>
+        <input type="url" id="imageUrl" name="imageUrl" required>
+      </div>
+      <div>
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price" required>
+      </div>
+      <button type="submit">Create Project</button>
+    </form>
+
+    <h1>All Projects</h1>
+    <div id="project-list"></div>
+  </main>
+  <script src="app.js"></script>
+  <script src="server.js"></script>
+  <script src="package.js"></script>
+</body>
+</html>
